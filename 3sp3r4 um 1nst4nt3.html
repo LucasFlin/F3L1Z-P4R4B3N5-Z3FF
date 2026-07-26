@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3SP3R4 UM 1NST4NT3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: rgb(31, 30, 30); color: lightgrey;">
+    <div id="timer"></div>
+</body>
+</html>
+<script>
+    let agora = new Date();
+    let hr = agora.getHours()
+    let min = agora.getMinutes()
+    let seg = agora.getSeconds()
+
+    let hrRes = 10 - hr
+    let minRes = 59 - min
+    let segRes = 59 - seg
+
+
+    if(agora.getHours() < 12){
+        timer.innerHTML = `${hrRes}:${minRes}:${segRes}`
+    } else {
+        window.location = './V4l3u.html'
+    }
+
+    setInterval(() => atualizarTimer(), 1000)
+
+    function atualizarTimer(){
+        segRes -= 1
+        if(segRes < 0){
+            segRes = 59
+            minRes -= 1
+            if(minRes < 0){
+                minRes = 59
+                hrRes -= 1
+            }
+        }
+
+        agora = Date.now()
+        timer.innerHTML = `${hrRes}:${minRes}:${segRes}`
+    }
+</script>

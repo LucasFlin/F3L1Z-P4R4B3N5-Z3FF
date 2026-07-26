@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0i :D</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+
+<body  style="background: url(./C0ISaS/S3LFIE\ DO\ S3R\ M41S\ L1NDO\ D3\ TODO\ O\ UN1V3RSO\ eu.png) no-repeat center center/cover; display: flex; flex-direction: column;">
+    <!-- TÁ BUSC4NDO 0 QUE? VAI EMB0RA SAMUEL 1SSO N4O É PR4 VC SEU S4F4DO >:( -->
+    <div class="numpad">
+        <div id="senha" class="senha">
+            <span id="n1"> * </span><span id="n2"> * </span><span id="n3"> * </span><span id="n4"> * </span>
+        </div>
+        <div class="linha">
+            <button onclick="gossar(9)" class="botao"> 1 </button> <button onclick="gossar(10)"  class="botao"> 2 </button> <button
+                onclick="gossar(11)"  class="botao"> 3 </button>
+        </div>
+        <div class="linha">
+            <button onclick="gossar(12)"  class="botao"> 4 </button> <button onclick="gossar(13)"  class="botao"> 5 </button> <button
+                onclick="gossar(14)"  class="botao"> 6 </button>
+        </div>
+        <div class="linha">
+            <button onclick="gossar(15)"  class="botao"> 7 </button> <button onclick="gossar(16)"  class="botao"> 8 </button> <button
+                onclick="gossar(17)"  class="botao"> 9 </button>
+        </div>
+        <div class="linha">
+            <button onclick="confirmar()"  class="botao"> Confirmar </button> <button onclick="gossar(8)"  class="botao"> 0 </button> <button
+                onclick="apagar()"  class="botao"> Apagar </button>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    let contador = 1
+    let resposta = ''
+
+    function gossar(num) {
+        res = num - 8
+
+        if (contador == 1) {
+            n1.innerHTML = ` ${res} `
+            resposta += res
+            contador++
+        } else if (contador == 2) {
+            n2.innerHTML = ` ${res} `
+            resposta += res
+            contador++
+        } else if (contador == 3) {
+            n3.innerHTML = ` ${res} `
+            resposta += res
+            contador++
+        } else if (contador == 4) {
+            n4.innerHTML = ` ${res} `
+            resposta += res
+            contador++
+        }
+    }
+    function apagar() {
+        placeholder = []
+        for (let i = 0; i < resposta.length; i++) {
+            placeholder.push(resposta[i])
+        }
+        resposta = ''
+
+        if (contador == 2) {
+            n1.innerHTML = ` * `
+            placeholder.pop()
+            console.log(resposta)
+            contador--
+        } else if (contador == 3) {
+            n2.innerHTML = ` * `
+            placeholder.pop()
+            placeholder.forEach(letra => {
+                resposta += letra
+            });
+            console.log(resposta)
+            contador--
+        } else if (contador == 4) {
+            n3.innerHTML = ` * `
+            placeholder.pop()
+            placeholder.forEach(letra => {
+                resposta += letra
+            });
+            console.log(resposta)
+            contador--
+        } else if (contador == 5) {
+            n4.innerHTML = ` * `
+            placeholder.pop()
+            placeholder.forEach(letra => {
+                resposta += letra
+            });
+            console.log(resposta)
+            contador--
+        }
+    }
+</script>

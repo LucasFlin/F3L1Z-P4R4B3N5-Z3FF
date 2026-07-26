@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Energia';
+    src: url('C0ISaS/Quantico-Regular.ttf');
+}
+@font-face {
+    font-family: 'Conhecimento';
+    src: url('C0ISaS/Sigilos\ de\ Conhecimento.ttf');
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    margin: 0px;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    font-family: 'Energia';
+    flex-wrap: wrap;
+    
+}
+
+.roxo{
+    background: darkmagenta;
+}
+
+.numpad{
+    padding: 5px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.199);
+}
+
+.botao{
+    width: 32%;
+    height: 50px;
+    cursor: pointer;
+    font-family: 'Energia';
+    background: lightgrey;
+}
+
+.linha{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-top: 10px;
+}
+
+.senha{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-style: solid;
+    border-width: 2px;
+    height: 40px;
+    background-color: whitesmoke;
+}
+
+.popup{
+    flex-direction: column;
+    border-color: #245DDA;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0px;
+}
+.barra{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: fit-content;
+    background-color: #245DDA;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    p{
+        display: flex;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        width: 15px;
+        height: 15px;
+        padding: 3px;
+        color: white;
+        border-style: solid;
+        border-radius: 3px;
+        border-width: 1px;
+        border-color: white;
+        background-color: red;
+        justify-content: center;
+        align-items: center;
+    }
+    p:hover{
+        background-color: rgb(172, 0, 0);
+        cursor: pointer;
+    }
+}
