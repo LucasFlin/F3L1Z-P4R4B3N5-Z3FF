@@ -1,12 +1,12 @@
 let jaFoi = []
 
-function comecaTimer(){
+function comecaTimer(aqui){
     console.log('timer começou')
-    let timer = setTimeout(() => {demora()}, 600000)
+    let timer = setTimeout(() => {demora(aqui)}, 600000)
     console.log(timer)
 }
 
-function demora(){
+function demora(puzzle){
     let random = '1'
 
     
@@ -28,8 +28,8 @@ function demora(){
         brincadeira.open = true
         audio.play()
         console.log(jaFoi)
-        dica.style.display = 'flex'
-        setTimeout(() => {demora()}, 300000)
+        div_dica.style.display = 'flex'
+        setTimeout(() => {demora(puzzle)}, 300000)
     } else if (random == 2){
         brincadeira.display = 'flex'
         brincadeira.innerHTML = `<div class="barra"><p onclick="brincadeira.close()">X</p></div>
@@ -38,7 +38,7 @@ function demora(){
         brincadeira.open = true
         audio.play()
         console.log(jaFoi)
-        setTimeout(() => {demora()}, 300000)
+        setTimeout(() => {demora(puzzle)}, 300000)
     } else if (random == 3){
         brincadeira.innerHTML = `<div class="barra"><p onclick="brincadeira.close()">X</p></div>
         <img src="BR1nc4d3R4S hihihiha/3SP3R4NDO.png">
@@ -46,7 +46,7 @@ function demora(){
         brincadeira.open = true
         audio.play()
         console.log(jaFoi)
-        setTimeout(() => {demora()}, 300000)
+        setTimeout(() => {demora(puzzle)}, 300000)
     } else {
         console.log(jaFoi)
         brincadeira.innerHTML = `<div class="barra"><p onclick="brincadeira.close()">X</p></div>
@@ -54,6 +54,7 @@ function demora(){
         <audio id="audio" src="BR1nc4d3R4S hihihiha/HAHAH4HAH4H4H4HAHAHA4H4/4C4B4 P3LO 4MOR D3 D3US.mp3"></audio>`
         brincadeira.open = true
         audio.play()
-        return
+        div_dica.innerHTML = `<button style="width: fit-content; margin-right: 10px; margin-top: 10px;" onclick="dick(${puzzle}, 2)">ULT1M4T3 D1CK (se n resolver c essa eu te encontro e me mato na sua frente)</button>`
+        return 'Acabou'
     }
 }
