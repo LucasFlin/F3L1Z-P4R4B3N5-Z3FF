@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body style="background-color: rgb(31, 30, 30); color: lightgrey;">
-    <div id="timer" style="font-size: xx-large;"></div>
-    <div id="timerRes"></div>
+    <div id="timer" style="font-size: 200px;"></div>
+    <div id="timerRes" style="display: flex; justify-content: center; align-content: center;"></div>
     <audio src="C0ISaS/B4NG3RS/SOM M4DRUG4D4.mp3" id="som"></audio>
 </body>
 </html>
@@ -30,13 +30,13 @@
 
     if(hr < 11){
         setTimeout(() => {alert(`N é tu q curte essa parada de T3MPO? Toma um RELOJASSO só pra vc :D`)}, 500)
-        timer.innerHTML = `${hr}:${min}:${seg}`
-        timerRes.innerHTML = `${hrRes}:${minRes}:${segRes}`
+        timer.innerHTML = `${hr}:${min}`
+            timerRes.innerHTML = `Espera só mais exatamente ${hrRes} horas, ${minRes} minutos e ${segRes} segundos :)`
     } else {
         window.location = './V4l3u.html'
     }
 
-    setInterval(() => atualizarTimer(), 1000)
+    setInterval(() => atualizarTimer(), 1000)   
 }
     function atualizarTimer(){
         segRes -= 1
@@ -49,13 +49,13 @@
             }
         }
 
-        agora = Date.now()
+        agora = new Date()
         hr = agora.getHours()
         min = agora.getMinutes()
         seg = agora.getSeconds()
         if(hr < 11){
-            timer.innerHTML = `${hr}:${min}:${seg}`
-            timerRes.innerHTML = `${hrRes}:${minRes}:${segRes}`
+            timer.innerHTML = `${hr}:${min}`
+            timerRes.innerHTML = `Espera só mais exatamente ${hrRes} horas, ${minRes} minutos e ${segRes} segundos :)`
         } else {
             window.location = './V4l3u.html'
         }
