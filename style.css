@@ -19,8 +19,14 @@ body{
     
 }
 
+.texto-energia{
+    color: darkmagenta;
+    font-weight: bolder;
+    font-family: 'Energia';
+}
+
 .roxo{
-    background: darkmagenta;
+    color: darkmagenta;
 }
 
 .numpad{

@@ -4,19 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <script src="BR1nc4d3R4S hihihiha/t3Mpo.js"></script>
 <script src="script.js"></script>
-<body onload="comecaTimer()">
-    <div id="dica" style="display: none; justify-content: flex-end; width: 95vw;">
-        <button>P3G4R UMA D1CK (dica)</button>
+<body onload="comecaTimer()" id="corpo" style="background: url(./C0ISaS/S4L4_NORM4R.png) no-repeat center center/cover; display: flex; flex-direction: row; justify-content: flex-start; height: 100vh; width: 100vw;">
+    <div id="backup" style="justify-content: end; height: 100vh; display: flex; flex-direction: column; background: none; border: none; width: 31%; margin-right: 3%;">
     </div>
-    <div style="display: flex; justify-content: center;">
-        <input type="text" id="resposta">
-        <button onclick="gritar(resposta.value)" id="butao"></button>
+    <div style="display: flex; justify-content: center; flex-direction: column; height: 100vh; width: 31%; margin-right: 3%; align-items: center;" id="areaResposta">
+        <p class="texto-energia">0I Z3FF!</p>
+        <button onclick="proximo(1)" id="butao" class="botao-resposta">PROX1MO</button>
+    </div>
+    <div id="div_dica" style="display: none; justify-content: flex-start;flex-direction: column; height: 100vh; background: none; border: none;width: 31%;align-items: end;">
+        <button style="width: fit-content; margin-right: 10px; margin-top: 10px;" onclick="dick(3, 1)">P3G4R UMA D1CK (dica)</button>
     </div>
     <dialog id="brincadeira" popover="auto" class="popup">
-
     </dialog>
+    <audio src="./C0ISaS/B4NG3RS/3RROU.mp3"></audio>
 </body>
 </html>
+<script>
+    setTimeout(() => {alert(`A parede onde os quadros estavam escurece, quase como uma tela desligando.
+        
+De repente, dois olhos amarelos brilham na parede, seguidos de uma voz familiar, porem bem mais estridente.`)}, 500)
+
+    function cores(){
+        setTimeout(() => {corpo.style.background = `url(./C0ISaS/COR3S/ROXO.png) no-repeat center center/cover`}, 1000)
+        setTimeout(() => {corpo.style.background = `url(./C0ISaS/COR3S/V3RM3LHO.png) no-repeat center center/cover`}, 2000)
+        setTimeout(() => {corpo.style.background = `url(./C0ISaS/COR3S/4ZUJ.png) no-repeat center center/cover`}, 3000)
+        setTimeout(() => {corpo.style.background = `url(./C0ISaS/COR3S/4M4R3LO.png) no-repeat center center/cover`}, 4000)
+        setTimeout(() => {corpo.style.background = `url(./C0ISaS/COR3S/L4R4NJ4.png) no-repeat center center/cover`}, 5000)
+        setTimeout(() => {corpo.style.background = `url(./C0ISaS/COR3S/L1M4.png) no-repeat center center/cover`}, 6000)
+        setTimeout(() => {corpo.style.background = `url(./C0ISaS/COR3S/C14NO.png) no-repeat center center/cover`}, 7000)
+        setTimeout(() => {corpo.style.background = `url(./C0ISaS/COR3S/F3LPS.png) no-repeat center center/cover`}, 8000)
+        setTimeout(() => {corpo.style.background = `url(./C0ISaS/COR3S/C14NO.png) no-repeat center center/cover`}, 9000)
+        setTimeout(() => {corpo.style.background = `url(./C0ISaS/COR3S/4ZUJ.png) no-repeat center center/cover`}, 10000)
+        setTimeout(() => {corpo.style.background = `url(./C0ISaS/COR3S/PR3TO.png) no-repeat center center/cover`}, 11000)
+        setTimeout(() => {cores()}, 26000)
+    }
+
+    function proximo(falaAtual) {
+        contador = falaAtual
+        if(contador == 1){
+            contador++
+            areaResposta.innerHTML = `<p class="texto-energia">L3MBR4 D3 M1M?</p>
+        <button onclick="proximo(${contador})" id="butao" class="botao-resposta">PROX1MO</button>`
+        } else if(contador == 2){
+            contador++
+            corpo.style.background = `url(./C0ISaS/S4L4_F3L1Z.png) no-repeat center center/cover`
+            areaResposta.innerHTML = `<p class="texto-energia">C4SFL1N!</p>
+        <button onclick="proximo(${contador})" id="butao" class="botao-resposta">PROX1MO</button>`
+        } else if(contador == 3){
+            contador++
+            corpo.style.background = `url(./C0ISaS/S4L4_NORM4R.png) no-repeat center center/cover`
+            areaResposta.innerHTML = `<p class="texto-energia">3SP3RO Q T3NH4 S3 D1V3RT1DO COM M3U PR3S3NTE</p>
+        <button onclick="proximo(${contador})" id="butao" class="botao-resposta">PROX1MO</button>`
+        } else if(contador == 4){
+            contador++
+            corpo.style.background = `url(./C0ISaS/S4L4_BR4VO.png) no-repeat center center/cover`
+            areaResposta.innerHTML = `<p class="texto-energia">3 3SP3RO Q 4 PORR4 DO S4MU3L N T3NH4 T3 SPO1L4DO TUDO</p>
+        <button onclick="proximo(${contador})" id="butao" class="botao-resposta">PROX1MO</button>`
+        } else if(contador == 5){
+            contador++
+            corpo.style.background = `url(./C0ISaS/S4L4_TR1ST3.png) no-repeat center center/cover`
+            areaResposta.innerHTML = `<p class="texto-energia">1NF3L1ZM3NT3 O F1M 3ST4 PROX1MO...</p>
+        <button onclick="proximo(${contador})" id="butao" class="botao-resposta">PROX1MO</button>`
+        } else if(contador == 6){
+            contador++
+            areaResposta.innerHTML = `<p class="texto-energia">VC J4 COMPL3TOU 3/4 DOS 3N1GM4S QU3 3U PR3P4R31...</p>
+        <button onclick="proximo(${contador})" id="butao" class="botao-resposta">PROX1MO</button>`
+        } else if(contador == 7){
+            contador++
+            corpo.style.background = `url(./C0ISaS/S4L4_F3L1Z.png) no-repeat center center/cover`
+            areaResposta.innerHTML = `<p class="texto-energia">M4S VC N P3RD3 POR 3SP3R4R, S3U PR3MIO T4 CH3G4NDO!</p>
+        <button onclick="proximo(${contador})" id="butao" class="botao-resposta">PROX1MO</button>`
+        } else if(contador == 8){
+            contador++
+            corpo.style.background = `url(./C0ISaS/S4L4_NORM4R.png) no-repeat center center/cover`
+            areaResposta.innerHTML = `<p class="texto-energia">M4S CH3GA D3 B4T3 P4PO, NOS V3MOS 3M BR3V3</p>
+        <button onclick="proximo(${contador})" id="butao" class="botao-resposta">PROX1MO</button>`
+        } else if(contador == 9){
+            corpo.style.background = `url(./C0ISaS/COR3S/PR3TO.png) no-repeat center center/cover`
+            areaResposta.innerHTML = `<input type="text" id="resposta" class="texto-resposta">
+        <button onclick="responder(resposta.value)" id="butao" class="botao-resposta">R3SPOND3R</button>`
+        cores()
+        }
+    }
+</script>

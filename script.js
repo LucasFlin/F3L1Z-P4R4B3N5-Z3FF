@@ -67,6 +67,45 @@ Alguns segundos se passam e você vê a tinta da Caneta Perpetua™ secando e de
     }
 }
 
+function digitar(enigma){
+    alert(`Você digita '${enigma}' na maquina estranha...`)
+        let resposta = padronizar(enigma)
+        if(resposta == 'FELIZNASCEU'){
+            alert(`... quando você termina de digitar, você ouve um *plim* vindo da máquina de escrever, provavelmente indicando que você acertou.
+Então a mesa começa a descer no chão, enquanto as escrituras na parede se apagam da direita para a esquerda e os quadros são puxados por buracos na parede que se fecham logo depois, te deixando numa sala completamente vazia, sem sinal de uma saída.
+
+Até que...`)
+
+    window.location = './M1NH4 V3Z 3B4444444.html'
+        } else if (resposta == ''){
+            alert(`... ter enviado sem digitar nada na máquina parece ter deixado ela extremamente iritada. Ela começa a crescer e crescer até cobrir completamente a sala, e então ela EXPLODE *BOOM*
+
+Exceto que essa é a sala de conhecimento, coisas assim não acontecem aqui, mas teria sido engraçado :D (Vc errou btw)`)
+        } else {
+            alert(`... mas nada aconteceu.
+                
+(Vc errou)`)
+        }
+}
+
+function responder(sla){
+    let resposta = padronizar(sla)
+    alert(`Você tenta responder '${sla}'...`)
+    if(resposta == 'FELIZNATAL'){
+        corpo.style.background = `black`
+      setTimeout(() => {alert(`... tudo se apaga, e você aguarda um pouco, confuso se respondeu certo.
+
+Até que de repente, você começa a escutar uma música!`)}, 500)  
+
+window.location = './M3ns4GEm.html'
+    } else if (resposta == ''){
+        alert(`... quando quiser pode responder já, fica a vontade :D`)
+    } else {
+        errou.play()
+        setTimeout(() => {alert(`... você aguarda um pouco, esperando qualquer tipo de reação, mas parece que você estava errado...`)}, 500)
+    }
+}
+
 function dick(puzzle, dica){
     if (puzzle == 1){
         if (dica == 1){
@@ -82,7 +121,7 @@ function dick(puzzle, dica){
         }
     } else if (puzzle == 3){
         if (dica == 1){
-            window.open('https://store.steampowered.com/app/1507580/Enigma_do_Medo/?l=brazilian', '_blank')
+            alert('Vc realmente quer dica pra esse ENIGMA? Achei q o homem era uma MAQUINA mas pelo visto estava errado... :(')
         } else {
             window.open('https://www.dcode.fr/enigma-machine-cipher', '_blank')
         }
