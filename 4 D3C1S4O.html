@@ -4,8 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <a href="Zeff luzidio.png" download="Zeff_Luzidio.png">teste 2</a>
+<body style="background: black no-repeat center center/cover; display: flex; flex-direction: row; justify-content: flex-start; height: 100vh; width: 100vw;">
+    <div id="backup" style="justify-content: end; height: 100vh; display: flex; flex-direction: column; background: none; border: none; width: 31%; margin-right: 3%;">
+        <img src="C0ISaS/HOLONAI.jpg" alt="" style="scale: 60%;">
+        <span class="texto-c" onclick="window.location = './carta.html'">mensagem</span>
+    </div>
+    <div style="display: flex; justify-content: center; flex-direction: column; height: 100vh; width: 31%; margin-right: 3%; align-items: center;" id="areaResposta">
+        <p class="texto-energia">F3L1Z P4R4B3NS Z3FFR3Y DH4M3R D4 S1LVA D3 XUP1NGOL1!!!</p>
+        <button onclick="proximo(1)" id="butao" class="botao-resposta">S3GU1R</button>
+    </div>
+    <div id="div_dica" style="display: flex; justify-content: flex-start;flex-direction: column; height: 100vh; background: none; border: none;width: 31%;align-items: end;">
+        <img src="C0ISaS/BOLO.gif" alt="">
+    </div>
+    <audio src="C0ISaS/B4NG3RS/PARABENS.mp3" id="niver" loop></audio>
+    <audio src="C0ISaS/B4NG3RS/HORA DO SHOW.mp3" id="momentoPresente" loop></audio>
 </body>
 </html>
+<script>
+    niver.play()
+    function proximo(falaAtual) {
+        contador = falaAtual
+        if(contador == 1){
+            contador++
+            areaResposta.innerHTML = `<p class="texto-energia">3SPERO Q T3NH4 S3 D1VERTIDO</p>
+        <button onclick="proximo(${contador})" id="butao" class="botao-resposta">PROX1MO</button>`
+        } else if(contador == 2){
+            contador++
+            areaResposta.innerHTML = `<p class="texto-energia">3 3SP3RO Q APROV31T3 B4ST4NT3 S3U D1A :D</p>
+        <button onclick="proximo(${contador})" id="butao" class="botao-resposta">PROX1MO</button>`
+        } else if(contador == 3){
+            contador++
+            areaResposta.innerHTML = `<p class="texto-energia">(msm sendo uma sexta-feira ainda, vai ter q trabalhar kkkkkkkkkkkkkkkkkkkkkkkkkkkk)</p>
+        <button onclick="proximo(${contador})" id="butao" class="botao-resposta">PROX1MO</button>`
+        } else if(contador == 4){
+            contador++
+            areaResposta.innerHTML = `<p class="texto-energia">4GOR4, O S3U PR3S3NT3!!</p>
+        <button onclick="proximo(${contador})" id="butao" class="botao-resposta">PROX1MO</button>`
+        } else if(contador == 5){
+            contador++
+            niver.pause()
+            momentoPresente.play()
+            areaResposta.innerHTML = `<p class="texto-energia">VOU ATÉ PARAR COM OS NUMEROS PRA AJUDAR NA IMERSÃO :D</p>
+        <button onclick="proximo(${contador})" id="butao" class="botao-resposta">PROX1MO</button>`
+        } else if(contador == 6){
+            contador++
+            areaResposta.innerHTML = `<p class="texto-energia">SABE... NO MEU ANIVERSÁRIO UM NEGOCIO BIZARRO</p>
+        <button onclick="proximo(${contador})" id="butao" class="botao-resposta">PROX1MO</button>`
+        } else if(contador == 7){
+            contador++
+            areaResposta.innerHTML = `<p class="texto-energia">EU FUI SEQUESTRADO, RESOLVI TODOS OS ENIGMAS, E NO FIM DE TUDO EU ENCONTREI ALGO QUE MUDOU MINHA VIDA</p>
+        <button onclick="proximo(${contador})" id="butao" class="botao-resposta">PROX1MO</button>`
+        } else if(contador == 8){
+            contador++
+            areaResposta.innerHTML = `<p class="texto-energia">E NO FIM DE TUDO EU ENCONTREI UM ANÉL, Q ERA A FODENDO RELIQUIA DE ENERGIA!</p>
+        <button onclick="proximo(${contador})" id="butao" class="botao-resposta">PROX1MO</button>`
+        } else if(contador == 9){
+            contador++
+            areaResposta.innerHTML = `<p class="texto-energia">ELA TAVA ME CHAMANDO...</p>
+        <button onclick="proximo(${contador})" id="butao" class="botao-resposta">PROX1MO</button>`
+        } else if(contador == 10){
+            contador++
+            areaResposta.innerHTML = `<p class="texto-energia">E DESDE QUE EU COLOQUEI ELA, MINHA VIDA TEM SIDO MUITO MAIS FODA</p>
+        <button onclick="proximo(${contador})" id="butao" class="botao-resposta">PROX1MO</button>`
+        } else if(contador == 11){
+            contador++
+            areaResposta.innerHTML = `<p class="texto-energia">EU NÃO FICO NENHUM DIA SEM ME DIVERTIR >:D</p>
+        <button onclick="proximo(${contador})" id="butao" class="botao-resposta">PROX1MO</button>`
+        } else if(contador == 12){
+            contador++
+            areaResposta.innerHTML = `<p class="texto-energia">MAS SÓ TEM UMA COISA FALTANDO... MEU BRO DO MEU LADINHO...</p>
+        <button onclick="proximo(${contador})" id="butao" class="botao-resposta">PROX1MO</button>`
+        } else if(contador == 13){
+            contador++
+            areaResposta.innerHTML = `<p class="texto-energia">POR ISSO, EU MEXI ALGUNS PALZINHOS E CONSEGUI CONVENCER UM OUTRO AMIGO QUE FIZ A TE DAR UMA CHANCE</p>
+        <button onclick="proximo(${contador})" id="butao" class="botao-resposta">PROX1MO</button>`
+        } else if(contador == 14){
+            contador++
+            areaResposta.innerHTML = `<p class="texto-energia">UM AMIGO BEM DIABOLICO, SIM, MAS SE VC VAI TER PODER, UM VISUAL FODÃO, E A GENTE VAI PODER VOLTAR A SER ENIGMA BROS JUNTOS >:D</p>
+        <button onclick="proximo(${contador})" id="butao" class="botao-resposta">PROX1MO</button>`
+        } else if(contador == 15){
+            contador++
+            areaResposta.innerHTML = `<p class="texto-energia">ATÉ MELHOR, POIS SEREMOS OS CRIADORES DOS ENIGMAS >:)</p>
+        <button onclick="proximo(${contador})" id="butao" class="botao-resposta">PROX1MO</button>`
+        } else if(contador == 16){
+            contador++
+            areaResposta.innerHTML = `<p class="texto-energia">MAS EU NÃO VOU TE FORÇAR, ASSIM COMO EU NO MEU ANIVERSÁRIO, VOCÊ TAMBÉM DEVE FAZER SUA ESCOLHA...</p>
+        <button onclick="proximo(${contador})" id="butao" class="botao-resposta">PROX1MO</button>`
+        }
+        else if(contador == 17){
+            contador++
+            areaResposta.innerHTML = `<p class="texto-energia">E então amigo, o que me diz? Sangue? ou Morte? :)</p>
+        <a href="Z3FF_DJ4BO.png" download="Zeff_Sangue.png"><button onclick="aceite()" class="botao-resposta">Aceitar</button></a> <a href="Zeff luzidio.png" download="Zeff_Morte.png"><button onclick="recusa()" class="botao-resposta">Recusar</button></a>`
+        }
+    }
+
+    function aceita(){
+
+
+    }
+
+    function recusa(){
+
+    }
+</script>

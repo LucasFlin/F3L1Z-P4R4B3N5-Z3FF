@@ -19,10 +19,19 @@ body{
     
 }
 
+.texto-c{
+    font-family: 'Conhecimento';
+    color: rgb(255, 196, 0);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 .texto-energia{
     color: darkmagenta;
     font-weight: bolder;
     font-family: 'Energia';
+    text-align: center;
 }
 
 .roxo{
