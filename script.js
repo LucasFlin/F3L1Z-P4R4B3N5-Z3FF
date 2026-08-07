@@ -97,7 +97,7 @@ function responder(sla){
 
 Até que de repente, você começa a escutar uma música!`)}, 500)  
 
-window.location = './M3ns4GEm.html'
+window.location = './4 D3C1S4O.html'
     } else if (resposta == ''){
         alert(`... quando quiser pode responder já, fica a vontade :D`)
     } else {
